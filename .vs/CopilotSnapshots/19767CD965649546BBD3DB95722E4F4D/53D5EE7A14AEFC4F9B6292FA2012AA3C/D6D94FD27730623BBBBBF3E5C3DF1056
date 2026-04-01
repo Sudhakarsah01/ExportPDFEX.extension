@@ -1,4 +1,4 @@
-# type: ignore
+﻿# type: ignore
 from pyrevit import revit, DB, forms
 from pyrevit.forms import WPFWindow
 import os
@@ -60,4 +60,4 @@ class ExportWindow(WPFWindow):
 # Show the window
 ExportWindow().ShowDialog()
 
-#.................end..................end..................end..................end..................end..................end..................end..................end..................end..................end
+#.................end..................
