@@ -24,6 +24,7 @@ class ExportWindow(WPFWindow):
 
         # Bind Export button
         self.ExportBtn.Click += self.export_sheet
+        #self.ExportBtn.SetFocus() += self.export_sheet
 
     # Export selected sheet
     def export_sheet(self, sender, args):
@@ -48,7 +49,7 @@ class ExportWindow(WPFWindow):
 
         start_time = time.time()
         #forms.alert('Exporting "{} - {}" to "{}"...'.format(sheet.SheetNumber, sheet.Name, folder))
-        #form alerts exporting format in the folder in the sheetnumber, sheetname, and the format
+        #forms.alerts('Exporting format in the folder in the sheetnumber, sheetname, and the format')
 
         try:
             self.doc.Export(folder, [sheet.Id], options)
