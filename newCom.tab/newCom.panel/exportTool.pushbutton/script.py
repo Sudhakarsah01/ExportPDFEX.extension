@@ -43,7 +43,7 @@ class ExportWindow(WPFWindow):
 
         if not os.path.exists(folder):
             os.makedirs(folder)
-
+        #export and option to be combined
         options = DB.PDFExportOptions()
         options.Combine = False
 
